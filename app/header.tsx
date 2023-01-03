@@ -8,8 +8,8 @@ export const Header: FC = () => {
   const { colorMode, toggleColorMode } = useColorMode()
 
   return (
-    <Box>
-      <Container maxW='container.lg'>
+    <header>
+      <Box>
         <Flex as='header' py='4' justifyContent='space-between' alignItems='center'>
           <Link as={NextLink} href='/'>
             <Heading
@@ -26,11 +26,12 @@ export const Header: FC = () => {
           <Link as={NextLink} href='/blogs'>
             blogs
           </Link>
+          <Link href='#socials'>socials</Link>
           <Button onClick={toggleColorMode}>
             Toggle {colorMode === 'light' ? 'Dark' : 'Light'}
           </Button>
         </Flex>
-      </Container>
-    </Box>
+      </Box>
+    </header>
   )
 }

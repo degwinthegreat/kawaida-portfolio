@@ -1,68 +1,72 @@
-import { Inter } from '@next/font/google'
-import Image from 'next/image'
+'use client'
 
-const inter = Inter({ subsets: ['latin'] })
+import { ExternalLinkIcon } from '@chakra-ui/icons'
+import {
+  Card,
+  CardHeader,
+  Heading,
+  Box,
+  CardBody,
+  Stack,
+  StackDivider,
+  Link,
+  Container,
+} from '@chakra-ui/react'
 
 export default function Home() {
   return (
     <main>
-      <div>
-        <p>
-          Get started by editing&nbsp;
-          <code>app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href='https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            By <Image src='/vercel.svg' alt='Vercel Logo' width={100} height={24} priority />
-          </a>
-        </div>
-      </div>
-
-      <div>
-        <Image src='/next.svg' alt='Next.js Logo' width={180} height={37} priority />
-        <div>
-          <Image src='/thirteen.svg' alt='13' width={40} height={31} priority />
-        </div>
-      </div>
-
-      <div>
-        <a
-          href='https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href='https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href='https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>Instantly deploy your Next.js site to a shareable URL with Vercel.</p>
-        </a>
-      </div>
+      <Card id='socials'>
+        <CardHeader>
+          <Heading size='md'>Socials</Heading>
+        </CardHeader>
+        <CardBody>
+          <Stack divider={<StackDivider />} spacing='4'>
+            <Box>
+              <Heading size='xs'>
+                <Link href='' isExternal>
+                  Github <ExternalLinkIcon mx='2px' />
+                </Link>
+              </Heading>
+            </Box>
+            <Box>
+              <Heading size='xs'>
+                <Link href='' isExternal>
+                  Twitter <ExternalLinkIcon mx='2px' />
+                </Link>
+              </Heading>
+            </Box>
+            <Box>
+              <Heading size='xs'>
+                <Link href='' isExternal>
+                  Facebook <ExternalLinkIcon mx='2px' />
+                </Link>
+              </Heading>
+            </Box>
+            <Box>
+              <Heading size='xs'>
+                <Link href='' isExternal>
+                  Note <ExternalLinkIcon mx='2px' />
+                </Link>
+              </Heading>
+            </Box>
+            <Box>
+              <Heading size='xs'>
+                <Link href='' isExternal>
+                  Qiita <ExternalLinkIcon mx='2px' />
+                </Link>
+              </Heading>
+            </Box>
+            <Box>
+              <Heading size='xs'>
+                <Link href='' isExternal>
+                  Zenn <ExternalLinkIcon mx='2px' />
+                </Link>
+              </Heading>
+            </Box>
+          </Stack>
+        </CardBody>
+      </Card>
     </main>
   )
 }

@@ -1,6 +1,6 @@
 'use client'
 
-import { ChakraProvider, ColorModeScript, extendTheme } from '@chakra-ui/react'
+import { ChakraProvider, ColorModeScript, extendTheme, Container } from '@chakra-ui/react'
 import { ReactNode } from 'react'
 
 const colors = {
@@ -17,7 +17,7 @@ const Providers = ({ children }: { children: ReactNode }) => {
     <>
       <ColorModeScript initialColorMode={theme.config.initialColorMode} />
       <ChakraProvider resetCSS theme={theme}>
-        {children}
+        <Container maxW='container.lg'>{children}</Container>
       </ChakraProvider>
     </>
   )
