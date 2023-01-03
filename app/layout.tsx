@@ -1,4 +1,5 @@
 import './globals.css'
+import { Header } from './header'
 import Providers from './providers'
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -10,7 +11,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       */}
       <head />
       <body>
-        <Providers>{children}</Providers>
+        <Providers>
+          <Header />
+          {children}
+        </Providers>
       </body>
     </html>
   )

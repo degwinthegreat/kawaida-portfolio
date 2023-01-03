@@ -1,13 +1,11 @@
 import { Inter } from '@next/font/google'
 import Image from 'next/image'
-import { Header } from './header'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
     <main>
-      <Header />
       <div>
         <p>
           Get started by editing&nbsp;
