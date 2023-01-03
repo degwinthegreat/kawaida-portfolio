@@ -1,3 +1,6 @@
+'use client'
+
+import { Button, useColorMode } from '@chakra-ui/react'
 import { Inter } from '@next/font/google'
 import Image from 'next/image'
 import styles from './page.module.css'
@@ -5,9 +8,12 @@ import styles from './page.module.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  const { colorMode, toggleColorMode } = useColorMode()
+
   return (
     <main className={styles.main}>
       <div className={styles.description}>
+        <Button onClick={toggleColorMode}>Toggle {colorMode === 'light' ? 'Dark' : 'Light'}</Button>
         <p>
           Get started by editing&nbsp;
           <code className={styles.code}>app/page.tsx</code>
