@@ -26,7 +26,7 @@ export const Header: FC = () => {
           <Link as={NextLink} href='/blogs'>
             blogs
           </Link>
-          <Link href='#socials'>socials</Link>
+          <Link href='/#socials'>socials</Link>
           <Button onClick={toggleColorMode}>
             Toggle {colorMode === 'light' ? 'Dark' : 'Light'}
           </Button>
