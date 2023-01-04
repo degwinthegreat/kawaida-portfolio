@@ -24,42 +24,42 @@ export default function Home() {
           <Stack divider={<StackDivider />} spacing='4'>
             <Box>
               <Heading size='xs'>
-                <Link href='' isExternal>
+                <Link href='https://github.com/degwinthegreat' isExternal>
                   Github <ExternalLinkIcon mx='2px' />
                 </Link>
               </Heading>
             </Box>
             <Box>
               <Heading size='xs'>
-                <Link href='' isExternal>
+                <Link href='https://twitter.com/tamamushi_2' isExternal>
                   Twitter <ExternalLinkIcon mx='2px' />
                 </Link>
               </Heading>
             </Box>
             <Box>
               <Heading size='xs'>
-                <Link href='' isExternal>
+                <Link href='https://www.facebook.com/shinsukekawaida/' isExternal>
                   Facebook <ExternalLinkIcon mx='2px' />
                 </Link>
               </Heading>
             </Box>
             <Box>
               <Heading size='xs'>
-                <Link href='' isExternal>
+                <Link href='https://note.com/tamamushi_' isExternal>
                   Note <ExternalLinkIcon mx='2px' />
                 </Link>
               </Heading>
             </Box>
             <Box>
               <Heading size='xs'>
-                <Link href='' isExternal>
+                <Link href='https://qiita.com/degwinthegreat' isExternal>
                   Qiita <ExternalLinkIcon mx='2px' />
                 </Link>
               </Heading>
             </Box>
             <Box>
               <Heading size='xs'>
-                <Link href='' isExternal>
+                <Link href='https://zenn.dev/degwinthegreat' isExternal>
                   Zenn <ExternalLinkIcon mx='2px' />
                 </Link>
               </Heading>
