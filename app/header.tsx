@@ -7,6 +7,7 @@ import {
   Box,
   Flex,
   Heading,
+  Text,
   VStack,
   useColorMode,
   useDisclosure,
@@ -66,8 +67,10 @@ export const Header: FC = () => {
             <DrawerContent>
               <DrawerCloseButton />
               <DrawerHeader>
-                kawaida dev
-                <Button onClick={toggleColorMode}>{colorMode === 'light' ? '🌙' : '🌞'}</Button>
+                <HStack justifyContent='space-around'>
+                  <Text>kawaida dev</Text>
+                  <Button onClick={toggleColorMode}>{colorMode === 'light' ? '🌙' : '🌞'}</Button>
+                </HStack>
               </DrawerHeader>
               <DrawerBody>
                 <VStack>
