@@ -1,6 +1,6 @@
 'use client'
 
-import { HamburgerIcon } from '@chakra-ui/icons'
+import { HamburgerIcon, MoonIcon, SunIcon } from '@chakra-ui/icons'
 import {
   Button,
   Link,
@@ -17,7 +17,6 @@ import {
   DrawerCloseButton,
   DrawerHeader,
   DrawerBody,
-  DrawerFooter,
   HStack,
 } from '@chakra-ui/react'
 import NextLink from 'next/link'
@@ -56,7 +55,9 @@ export const Header: FC = () => {
         </Link>
         <HStack flex='1' justifyContent='space-around' display={{ base: 'none', md: 'flex' }}>
           <Links />
-          <Button onClick={toggleColorMode}>{colorMode === 'light' ? '🌙' : '🌞'}</Button>
+          <Button onClick={toggleColorMode}>
+            {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
+          </Button>
         </HStack>
         <Box display={{ base: 'block', md: 'none' }}>
           <Button ref={btnRef} onClick={onOpen}>
@@ -69,7 +70,9 @@ export const Header: FC = () => {
               <DrawerHeader>
                 <HStack justifyContent='space-around'>
                   <Text>kawaida dev</Text>
-                  <Button onClick={toggleColorMode}>{colorMode === 'light' ? '🌙' : '🌞'}</Button>
+                  <Button onClick={toggleColorMode}>
+                    {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
+                  </Button>
                 </HStack>
               </DrawerHeader>
               <DrawerBody>
