@@ -4,11 +4,6 @@ import { ChakraProvider, ColorModeScript, extendTheme, Container } from '@chakra
 import { ReactNode } from 'react'
 
 const config = {
-  brand: {
-    900: '#1a365d',
-    800: '#153e75',
-    700: '#2a69ac',
-  },
   initialColorMode: 'system',
   useSystemColorMode: false,
 }
