@@ -26,9 +26,10 @@ const Links = () => {
   return (
     <>
       <Link as={NextLink} href='/blogs'>
-        blogs
+        Blogs
       </Link>
-      <Link href='/#socials'>socials</Link>
+      <Link href='/#bio'>Bio</Link>
+      <Link href='/#socials'>Socials</Link>
     </>
   )
 }
